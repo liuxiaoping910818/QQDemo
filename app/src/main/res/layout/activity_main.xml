@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/btn_back"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="联系人"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></FrameLayout>
+    <include layout="@layout/divider_line"/>
+    
+    <LinearLayout 
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <ImageView 
+                android:id="@+id/iv_tab_conversion"
+                android:contentDescription="@null"
+                android:layout_height="@dimen/image_height"
+                android:layout_width="@dimen/image_height"
+                android:background="@drawable/conversion_tab_selector"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <ImageView 
+                 android:id="@+id/iv_tab_contact"
+                android:contentDescription="@null"
+                android:layout_height="@dimen/image_height"
+                android:layout_width="@dimen/image_height"
+                android:background="@drawable/contact_tab_selector"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <ImageView 
+                 android:id="@+id/iv_tab_dongtai"
+                android:contentDescription="@null"
+                android:layout_height="@dimen/image_height"
+                android:layout_width="@dimen/image_height"
+                android:background="@drawable/dongtai_tab_selector"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
